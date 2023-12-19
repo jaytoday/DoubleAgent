@@ -2,9 +2,11 @@
 
 ## Quick Start 
 
-### Install Dependencies 
+### Setup Environment
 
 Run `poetry install` to initialize the virtual environment with required libraries.
+
+Make sure that the `OPENAI_API_KEY` environment varaible is set to your OpenAI API key. You can do this by running `cp .env.template .env` to create a `.env` file and then populating the value for `OPENAI_API_KEY` in the created `.env` file.
 
 ### Run the Application
 
