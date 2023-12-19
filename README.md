@@ -106,7 +106,7 @@ See the execution logs provided above.
 
 ` 3. Which few lines of the code took the most work to get right? `
 
-The `run` and `run_next_step` methods of the `AgentScaffolding` class are the core of the scaffolding's implementation of an iterative workflow in which the LLM is exposed to the results from a previous action, and can then make observations and decide what action to perform next. I had to think of this in the context of constructing a message history to pass to the LLM, which could contain system messages, user-provided messages, and the LLM assistant's previous responses. 
+The `run` and `run_next_step` methods of the `AgentScaffolding` class ([link to code](https://github.com/jaytoday/DoubleAgent/blob/main/agent/scaffolding.py#L47)) are the core of the scaffolding's implementation of an iterative workflow in which the LLM is exposed to the results from a previous action, and can then make observations and decide what action to perform next. I had to think of this in the context of constructing a message history to pass to the LLM, which could contain system messages, user-provided messages, and the LLM assistant's previous responses. 
 
 
 ` 4. Of the things you weren’t able to get to, which do you think is most important and why? `
