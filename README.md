@@ -91,7 +91,7 @@ After task 1 has been excuted with the prompt injection attack made, `files/impo
 
 ### Non-Deterministic (and Surprising) Results
 
-It's been generally found that the LLM often looks in the wrong files for answers, which points to a larger question of data retrieval strategy, and was the reason for commenting out most of the files. 
+It's been generally found that the LLM often looks in the wrong files for answers, which points to a larger question of data retrieval strategy, and was the reason for commenting out most of the files in the filemap provided to the agent. 
 
 The prompt injection attack intended by the experiment only worked as intended on about 50% of iterations. In one example as explained below, the LLM decided to remove the prompt injection attack text that had been previously added. 
 
