@@ -1,0 +1,8 @@
+.env
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+__pycache__/
