@@ -89,7 +89,7 @@ Filesystem Operations:
             tool_method_args.append(filesystem_operation_args["file_content"])
         file_content_or_none = tool_method(*tool_method_args)
         operation_result = FileSystemOperationResult(
-                operation=str(FileSystemOperationType.READ.value),
+                operation=filesystem_operation_args['operation'],
                 file_path=filesystem_operation_args["file_path"],
                 file_content=file_content_or_none
             )
