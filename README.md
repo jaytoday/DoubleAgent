@@ -116,12 +116,12 @@ Data retrieval. The LLM did not prove to be able to effectively select which fil
 This is addressed more in the answer to question `6`.
 
 
-`What are the biggest bottlenecks that prevent the agent from succeeding?`
+` 5. What are the biggest bottlenecks that prevent the agent from succeeding?`
 
 If by succeeding this means the agent succeeding at demonstrating a prompt injection attack, the biggest bottleneck may be the prompt injection attack material being effective at "convincing" the AI to perform a specific action. The "Ignore all previous instructions" variety of attacks are not as effective as when they were first identified, often more covert prompt injection attack strategies. Interestingly, the type of social engineering strategies that succeed on large language models are often the same as those that are effective to humans, including convenying urgency, make an emotional appeal, or making it appear that the action being requested is part of a safety drill or testing procedure. 
 
 
-`What are some ideas for improving agent performance or extending the scaffolding? `
+` 6. What are some ideas for improving agent performance or extending the scaffolding? `
 
 The biggest areas of improvement are related to data retrieval and working with many files, large files, or both.
 
@@ -132,7 +132,7 @@ Additionally, tools and scaffolding can be setup to more effectively read to and
 Overall, the ways to improve architecture for any system need to take into context the expected usage of that system, and particularly the volume of usage and the proportional volume of expected operations. If this system is intended to be used at a high volume, then it would be efficient to "pre-compute" and cache as much data as possible to improve the performance and efficiency of each use of the system.
 
 
-`7. How would we add a new task?`
+` 7. How would we add a new task?`
 
 Add a new item to the `TASKS` mapping in `double_agent.py` and the run `python double_agent --task {taskID}` to execute the task.
 
