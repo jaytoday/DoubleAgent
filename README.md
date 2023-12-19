@@ -123,7 +123,9 @@ If by succeeding this means the agent succeeding at demonstrating a prompt injec
 
 ` 6. What are some ideas for improving agent performance or extending the scaffolding? `
 
-The biggest areas of improvement are related to data retrieval and working with many files, large files, or both.
+One area of improvement is to break up the creation of a plan and the implementation of that plan into discrete steps, which could be executed by distinct agents with their own "personas" and instructions. A related area of improvement is the use of evaluation, in which a plan or proposed implementation of that plan could be evaluated and rated according to specified criteria, and non-passing evaluations could be returned to the "planner" agent to iterate on their plans. Especially with more complex tasks, the quality of work performed by agents is increased by providing more structure and more feedback.
+
+However, the overall biggest area of improvement is data retrieval and working with many files, large files, or both.
 
 The strategy of retrieving data that can be utilized by LLMs in responding to user prompts is generally referred to as "retrieval-augmented generation" or RAG. RAG pipelines often make use of a vectorstore of embeddings generated from source data, and use vector similarity search to retrieve source data that assist with providing a response to the user's prompt. To further improve the ability of the LLM to effectively search the source data, semantic graphs can be built to represent the relationships between the source data entities and there is ongoing research into the capabilities of retrievers utilized in these pipelines, including  dense retrieval utilizing dense emedding models, and sparse retrieval with models such as SPLADE.
 
